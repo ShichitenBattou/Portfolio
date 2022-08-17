@@ -25,3 +25,4 @@ C:\Users\pocko\source\repos\Portfolio\WindowsSetteings\WindowsSetteings\bin\Debu
 C:\Users\pocko\source\repos\Portfolio\WindowsSetteings\WindowsSetteings\bin\Debug\AudioDeviceSetting.dll
 C:\Users\pocko\source\repos\Portfolio\WindowsSetteings\WindowsSetteings\bin\Debug\AudioDeviceSetting.pdb
 C:\Users\pocko\source\repos\Portfolio\WindowsSetteings\WindowsSetteings\obj\Debug\WindowsSetteings.csproj.CopyComplete
+C:\Users\pocko\Source\Repos\Portfolio\WindowsSetteings\WindowsSetteings\obj\Debug\WindowsSetteings.AudioDeviceButton.resources

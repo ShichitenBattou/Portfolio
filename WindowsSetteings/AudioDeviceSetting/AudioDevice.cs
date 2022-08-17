@@ -30,7 +30,7 @@ namespace AudioDeviceSetting
         private string _Device;
 
         public int Index { get { return _Index; } }
-        public bool Default { get { return _Default; } }
+        public bool Default { get { return _Default; } set{ this._Default = value; } }
         public bool DefaultCommunication { get { return _DefaultCommunication; } }
         public DeviceType Type { get { return _Type; } }
         public string Name { get { return _Name; } }

@@ -26,9 +26,10 @@ namespace WindowsSetteings
             tableLayoutPanel1.ColumnStyles.Clear();
             for (int i = 0; i < this.audioDevices.Count(); i++)
             {
-                Button button = new Button();
+                AudioDeviceButton button = new AudioDeviceButton(this.audioDevices[i]);
                 button.Text = this.audioDevices[i].Name;
                 button.Dock = DockStyle.Fill;
+                button.Visible = true;
                 tableLayoutPanel1.Controls.Add(button, i, 0);
                 ColumnStyle columnStyle = new ColumnStyle(SizeType.Percent,100);
                 tableLayoutPanel1.ColumnStyles.Add(columnStyle);

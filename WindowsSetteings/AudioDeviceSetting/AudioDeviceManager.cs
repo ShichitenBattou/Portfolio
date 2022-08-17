@@ -22,7 +22,7 @@ namespace AudioDeviceSetting
                 foreach (PSObject result in results)
                 {
                     dynamic obj = result.BaseObject;
-                    devices.Add( new AudioDevice(obj.Index, obj.Default, obj.DefaultCommunication, obj.Type, obj.Name, obj.ID, obj.Device));
+                    devices.Add(new AudioDevice(obj.Index, obj.Default, obj.DefaultCommunication, obj.Type, obj.Name, obj.ID, obj.Device));
                 }
             }
             return devices;
@@ -36,8 +36,8 @@ namespace AudioDeviceSetting
                 string src = @"Get-AudioDevice -Playback";
                 Collection<PSObject> results = invoker.Invoke(src);
                 if (results.Count != 1) throw new IndexOutOfRangeException();
-                    dynamic obj = results[0].BaseObject;
-                    return new AudioDevice(obj.Index, obj.Default, obj.DefaultCommunication, obj.Type, obj.Name, obj.ID, obj.Device);
+                dynamic obj = results[0].BaseObject;
+                return new AudioDevice(obj.Index, obj.Default, obj.DefaultCommunication, obj.Type, obj.Name, obj.ID, obj.Device);
             }
         }
 
@@ -49,10 +49,23 @@ namespace AudioDeviceSetting
                 string src = @"Get-AudioDevice -Recording";
                 Collection<PSObject> results = invoker.Invoke(src);
                 if (results.Count != 1) throw new IndexOutOfRangeException();
-                    dynamic obj = results[0].BaseObject;
-                    return new AudioDevice(obj.Index, obj.Default, obj.DefaultCommunication, obj.Type, obj.Name, obj.ID, obj.Device);
+                dynamic obj = results[0].BaseObject;
+                return new AudioDevice(obj.Index, obj.Default, obj.DefaultCommunication, obj.Type, obj.Name, obj.ID, obj.Device);
             }
         }
 
+        static public void Set_AudioDevice(AudioDevice audioDevice)
+        {
+                using (var invoker = new RunspaceInvoke())
+                {
+                    string src = $@"Set-AudioDevice -ID ""{audioDevice.ID}""";
+                    Collection<PSObject> results = invoker.Invoke(src);
+                    foreach (PSObject pS in results)
+                    {
+                        Console.WriteLine(pS.ToString());
+                    }
+                }
+            
+        }
     }
 }
