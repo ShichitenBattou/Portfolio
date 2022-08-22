@@ -45,11 +45,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AudioDevice.cs" />
-    <Compile Include="AudioDeviceCollection.cs" />
-    <Compile Include="AudioDeviceEnumerator.cs" />
+    <Compile Include="BaseClasses\AudioDevice.cs" />
+    <Compile Include="BaseClasses\AudioDeviceCollection.cs" />
+    <Compile Include="BaseClasses\AudioDeviceEnumerator.cs" />
     <Compile Include="AudioDeviceManager.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -6,9 +6,9 @@ C:\Users\pocko\source\repos\WindowsSetteing\AudioDeviceSetting\obj\Debug\AudioDe
 C:\Users\pocko\source\repos\WindowsSetteing\AudioDeviceSetting\obj\Debug\AudioDeviceSetting.dll
 C:\Users\pocko\source\repos\WindowsSetteing\AudioDeviceSetting\obj\Debug\AudioDeviceSetting.pdb
 C:\Users\pocko\source\repos\WindowsSetteing\AudioDeviceSetting\obj\Debug\AudioDeviceSetting.csproj.AssemblyReference.cache
-C:\Users\pocko\source\repos\Portfolio\WindowsSetteings\AudioDeviceSetting\bin\Debug\AudioDeviceSetting.dll
-C:\Users\pocko\source\repos\Portfolio\WindowsSetteings\AudioDeviceSetting\bin\Debug\AudioDeviceSetting.pdb
-C:\Users\pocko\source\repos\Portfolio\WindowsSetteings\AudioDeviceSetting\obj\Debug\AudioDeviceSetting.csproj.AssemblyReference.cache
-C:\Users\pocko\source\repos\Portfolio\WindowsSetteings\AudioDeviceSetting\obj\Debug\AudioDeviceSetting.csproj.CoreCompileInputs.cache
-C:\Users\pocko\source\repos\Portfolio\WindowsSetteings\AudioDeviceSetting\obj\Debug\AudioDeviceSetting.dll
-C:\Users\pocko\source\repos\Portfolio\WindowsSetteings\AudioDeviceSetting\obj\Debug\AudioDeviceSetting.pdb
+C:\Users\pocko\Source\Repos\Portfolio\WindowsSetteings\AudioDeviceSetting\bin\Debug\AudioDeviceSetting.dll
+C:\Users\pocko\Source\Repos\Portfolio\WindowsSetteings\AudioDeviceSetting\bin\Debug\AudioDeviceSetting.pdb
+C:\Users\pocko\Source\Repos\Portfolio\WindowsSetteings\AudioDeviceSetting\obj\Debug\AudioDeviceSetting.csproj.CoreCompileInputs.cache
+C:\Users\pocko\Source\Repos\Portfolio\WindowsSetteings\AudioDeviceSetting\obj\Debug\AudioDeviceSetting.dll
+C:\Users\pocko\Source\Repos\Portfolio\WindowsSetteings\AudioDeviceSetting\obj\Debug\AudioDeviceSetting.pdb
+C:\Users\pocko\Source\Repos\Portfolio\WindowsSetteings\AudioDeviceSetting\obj\Debug\AudioDeviceSetting.csproj.AssemblyReference.cache
