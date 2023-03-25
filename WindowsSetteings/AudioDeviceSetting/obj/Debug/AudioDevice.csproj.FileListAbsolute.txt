@@ -1,5 +1,0 @@
-C:\Users\pocko\Source\Repos\Portfolio\WindowsSetteings\AudioDeviceSetting\obj\Debug\AudioDevice.csproj.CoreCompileInputs.cache
-C:\Users\pocko\Source\Repos\Portfolio\WindowsSetteings\AudioDeviceSetting\bin\Debug\AudioDeviceSetting.dll
-C:\Users\pocko\Source\Repos\Portfolio\WindowsSetteings\AudioDeviceSetting\bin\Debug\AudioDeviceSetting.pdb
-C:\Users\pocko\Source\Repos\Portfolio\WindowsSetteings\AudioDeviceSetting\obj\Debug\AudioDeviceSetting.dll
-C:\Users\pocko\Source\Repos\Portfolio\WindowsSetteings\AudioDeviceSetting\obj\Debug\AudioDeviceSetting.pdb
