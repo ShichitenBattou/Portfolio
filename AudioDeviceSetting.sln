@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32407.337
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioDeviceForm", "AudioDeviceForm\AudioDeviceForm.csproj", "{5FC31675-6C81-48E6-8077-A50F690D3757}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioDeviceForm", "WindowsSetteings\AudioDeviceForm\AudioDeviceForm.csproj", "{5FC31675-6C81-48E6-8077-A50F690D3757}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioDeviceSetting", "AudioDeviceSetting\AudioDeviceSetting.csproj", "{3AA82F1D-401A-4978-877D-C11B5754EFE5}"
-EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "AudioDeviceSettingSetup", "AudioDeviceSettingSetup\AudioDeviceSettingSetup.vdproj", "{0ED23E33-6749-46A4-9041-EA6ED7857A51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioDeviceSetting", "WindowsSetteings\AudioDeviceSetting\AudioDeviceSetting.csproj", "{3AA82F1D-401A-4978-877D-C11B5754EFE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,8 +21,6 @@ Global
 		{3AA82F1D-401A-4978-877D-C11B5754EFE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AA82F1D-401A-4978-877D-C11B5754EFE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AA82F1D-401A-4978-877D-C11B5754EFE5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0ED23E33-6749-46A4-9041-EA6ED7857A51}.Debug|Any CPU.ActiveCfg = Debug
-		{0ED23E33-6749-46A4-9041-EA6ED7857A51}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
