@@ -8,6 +8,6 @@ VisualStudioでAudioDeviceSetting.slnを開いた後、F5でデバッグ実行�
 
 ## 概要
 
-音声の入出力先を変えるだけのWindowsFormアプリです。
-AudioDeviceSetting.csproj ← dll
+音声の入出力先を変えるだけのWindowsFormアプリです。\
+AudioDeviceSetting.csproj ← dll\
 AudioDeviceForm.csproj ← フォーム
