@@ -1,0 +1,3 @@
+[submodule "GitModules/AudioSwitcher"]
+	path = GitModules/AudioSwitcher
+	url = https://github.com/ShichitenBattou/AudioSwitcher.git
