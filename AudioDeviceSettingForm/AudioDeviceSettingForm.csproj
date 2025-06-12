@@ -9,7 +9,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AudioSwitcher\AudioSwitcher.AudioApi.CoreAudio\AudioSwitcher.AudioApi.CoreAudio.csproj" />
+    <ProjectReference Include="..\GitModules\AudioSwitcher.AudioApi.CoreAudio\AudioSwitcher.AudioApi.CoreAudio.csproj">
+      <Private>true</Private>
+      <CopyLocal>true</CopyLocal>
+    </ProjectReference>
   </ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="if not exist &quot;$(ProjectDir)..\GitModules&quot; git submodule update --init --recursive" />
+    <Exec Command="dotnet build &quot;$(ProjectDir)..\GitModules\AudioSwitcher.AudioApi\AudioSwitcher.AudioApi.csproj&quot; --configuration $(Configuration)" />
+    <Exec Command="dotnet build &quot;$(ProjectDir)..\GitModules\AudioSwitcher.AudioApi.CoreAudio\AudioSwitcher.AudioApi.CoreAudio.csproj&quot; --configuration $(Configuration)" />
+  </Target>
 
 </Project>

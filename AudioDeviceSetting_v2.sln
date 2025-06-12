@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioDeviceSettingForm", "AudioDeviceSettingForm\AudioDeviceSettingForm.csproj", "{4EFFF6F9-142A-4783-B862-82202AF6D744}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioSwitcher.AudioApi.CoreAudio", "AudioSwitcher\AudioSwitcher.AudioApi.CoreAudio\AudioSwitcher.AudioApi.CoreAudio.csproj", "{BBCF940E-3D37-4C39-8F60-56395011F214}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioSwitcher.AudioApi.CoreAudio", "GitModules\AudioSwitcher.AudioApi.CoreAudio\AudioSwitcher.AudioApi.CoreAudio.csproj", "{AF1BFED4-7FB4-4B54-A4F2-B40C76FFBCAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{4EFFF6F9-142A-4783-B862-82202AF6D744}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EFFF6F9-142A-4783-B862-82202AF6D744}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EFFF6F9-142A-4783-B862-82202AF6D744}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BBCF940E-3D37-4C39-8F60-56395011F214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BBCF940E-3D37-4C39-8F60-56395011F214}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BBCF940E-3D37-4C39-8F60-56395011F214}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BBCF940E-3D37-4C39-8F60-56395011F214}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF1BFED4-7FB4-4B54-A4F2-B40C76FFBCAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF1BFED4-7FB4-4B54-A4F2-B40C76FFBCAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF1BFED4-7FB4-4B54-A4F2-B40C76FFBCAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF1BFED4-7FB4-4B54-A4F2-B40C76FFBCAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
