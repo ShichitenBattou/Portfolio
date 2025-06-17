@@ -16,7 +16,6 @@ Windowsの音声デバイス設定を切り替えるためのWindowsFormsアプ�
 - 基本的な機能を実装
 
 ## 開発環境
-
 - Visual Studio 2022
 - Windows 10/11
 
@@ -34,3 +33,9 @@ Windowsの音声デバイス設定を切り替えるためのWindowsFormsアプ�
 ### WindowsSettings
 - AudioDeviceSetting.csproj - コアライブラリ
 - AudioDeviceForm.csproj - WindowsFormsアプリケーション
+
+## 注意
+Gitのサブモジュールを使用しているため、リポジトリをクローンした後は以下のコマンドを実行してサブモジュールを初期化してください。
+```sh
+git submodule update --init --recursive
+```
