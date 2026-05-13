@@ -13,7 +13,10 @@
         WindowStartupLocation="Manual"
         Loaded="Window_Loaded"
         MouseLeftButtonDown="Window_MouseLeftButtonDown"
-        MouseLeftButtonUp="Window_MouseLeftButtonUp">
+        MouseLeftButtonUp="Window_MouseLeftButtonUp"
+        AllowsTransparency="True"
+        Background="Transparent"
+        >
     <Window.Resources>
         <Style x:Key="DeviceTextBlockStyle" TargetType="TextBlock">
             <Setter Property="TextWrapping" Value="Wrap"/>
@@ -40,104 +43,110 @@
             Modifiers="Control"
             Command="{Binding RefreshDevicesCommand}"/>
     </Window.InputBindings>
-    <DockPanel
-        Height="118"
-        MinHeight="118"
-        MaxHeight="118" VerticalAlignment="Top">
-        <Grid
-            DockPanel.Dock="Top">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <StackPanel
-                Orientation="Horizontal"
-                Grid.Column="0"
-                MinWidth="282"
-                Grid.ColumnSpan="2">
-                <Button
-                    Click="RefreshDevices_Click"
-                    Margin="5,0,0,0">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Margin="5,0,0,0">デバイス更新</TextBlock>
-                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE895;" Height="12" Margin="2,2,5,0"/>
-                    </StackPanel>
-                </Button>
-                <CheckBox
-                    Margin="10,0,0,0"
-                    Content="この画面を最前面に配置する"
-                    VerticalAlignment="Center"
-                    Click="CheckBox_Checked"/>
-            </StackPanel>
-            <StackPanel
-                Grid.Column="1"
-                Orientation="Horizontal"
-                HorizontalAlignment="Right">
-                <Button FontFamily="Segoe MDL2 Assets" FontSize="14" Content="&#xE921;" Click="Minimize_Click" Padding="3,0,3,0"/>
-                <Button FontFamily="Segoe MDL2 Assets" FontSize="14" Content="&#xE8BB;" Click="Close_Click" Padding="3,0,3,0"/>
-            </StackPanel>
-        </Grid>
-        <TabControl
-            Padding="0"
-            Height="100"
-            Width="580">
-            <TabItem
-                Name="PlaybackDevices">
-                <TabItem.Header>
-                    <TextBlock Text="スピーカー" FontWeight="Bold" FontSize="16"/>
-                </TabItem.Header>
-                <TabItem.Content>
-                    <ListView
-                        Name="lvPlaybackDeviceList"
-                        SelectionMode="Single"
-                        HorizontalAlignment="Stretch"
-                        VerticalAlignment="Stretch"
-                        SelectionChanged="setAsDefaultDevice"
-                        ItemsSource="{Binding PlaybackDevices}"
-                        ItemContainerStyle="{StaticResource ListViewItem}">
-                        <ListView.ItemsPanel>
-                            <ItemsPanelTemplate>
-                                <StackPanel Orientation="Horizontal"/>
-                            </ItemsPanelTemplate>
-                        </ListView.ItemsPanel>
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <TextBlock
-                                    Style="{StaticResource DeviceTextBlockStyle}"
-                                    Text="{Binding FullName}"/>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
-                </TabItem.Content>
-            </TabItem>
-            <TabItem
-                Name="RecordingDevices">
-                <TabItem.Header>
-                    <TextBlock Text="マイク" FontWeight="Bold" FontSize="16"/>
-                </TabItem.Header>
-                <TabItem.Content>
-                    <ListView Name="lvCaptureDevices"
-                          SelectionMode="Single"
-                          HorizontalAlignment="Stretch"
-                          VerticalAlignment="Stretch"
-                          SelectionChanged="setAsDefaultDevice"
-                          ItemsSource="{Binding CaptureDevices}"
-                          ItemContainerStyle="{StaticResource ListViewItem}">
-                        <ListView.ItemsPanel>
-                            <ItemsPanelTemplate>
-                                <StackPanel Orientation="Horizontal"/>
-                            </ItemsPanelTemplate>
-                        </ListView.ItemsPanel>
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <TextBlock
-                                    Style="{StaticResource DeviceTextBlockStyle}"
-                                    Text="{Binding FullName}"/>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
-                </TabItem.Content>
-            </TabItem>
-        </TabControl>
-    </DockPanel>
+    <Border
+        CornerRadius="10"
+        Background="White"
+        BorderBrush="Gray"
+        BorderThickness="1">
+        <DockPanel
+            Height="118"
+            MinHeight="118"
+            MaxHeight="118" VerticalAlignment="Top">
+            <Grid
+                DockPanel.Dock="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel
+                    Orientation="Horizontal"
+                    Grid.Column="0"
+                    MinWidth="282"
+                    Grid.ColumnSpan="2">
+                    <Button
+                        Click="RefreshDevices_Click"
+                        Margin="5,0,0,0">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="5,0,0,0">デバイス更新</TextBlock>
+                            <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE895;" Height="12" Margin="2,2,5,0"/>
+                        </StackPanel>
+                    </Button>
+                    <CheckBox
+                        Margin="10,0,0,0"
+                        Content="この画面を最前面に配置する"
+                        VerticalAlignment="Center"
+                        Click="CheckBox_Checked"/>
+                </StackPanel>
+                <StackPanel
+                    Grid.Column="1"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right">
+                    <Button FontFamily="Segoe MDL2 Assets" FontSize="14" Content="&#xE921;" Click="Minimize_Click" Padding="3,0,3,0"/>
+                    <Button FontFamily="Segoe MDL2 Assets" FontSize="14" Content="&#xE8BB;" Click="Close_Click" Padding="3,0,3,0"/>
+                </StackPanel>
+            </Grid>
+            <TabControl
+                Padding="0"
+                Height="100"
+                Width="580">
+                <TabItem
+                    Name="PlaybackDevices">
+                    <TabItem.Header>
+                        <TextBlock Text="スピーカー" FontWeight="Bold" FontSize="16"/>
+                    </TabItem.Header>
+                    <TabItem.Content>
+                        <ListView
+                            Name="lvPlaybackDeviceList"
+                            SelectionMode="Single"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch"
+                            SelectionChanged="setAsDefaultDevice"
+                            ItemsSource="{Binding PlaybackDevices}"
+                            ItemContainerStyle="{StaticResource ListViewItem}">
+                            <ListView.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <StackPanel Orientation="Horizontal"/>
+                                </ItemsPanelTemplate>
+                            </ListView.ItemsPanel>
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock
+                                        Style="{StaticResource DeviceTextBlockStyle}"
+                                        Text="{Binding FullName}"/>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </TabItem.Content>
+                </TabItem>
+                <TabItem
+                    Name="RecordingDevices">
+                    <TabItem.Header>
+                        <TextBlock Text="マイク" FontWeight="Bold" FontSize="16"/>
+                    </TabItem.Header>
+                    <TabItem.Content>
+                        <ListView Name="lvCaptureDevices"
+                              SelectionMode="Single"
+                              HorizontalAlignment="Stretch"
+                              VerticalAlignment="Stretch"
+                              SelectionChanged="setAsDefaultDevice"
+                              ItemsSource="{Binding CaptureDevices}"
+                              ItemContainerStyle="{StaticResource ListViewItem}">
+                            <ListView.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <StackPanel Orientation="Horizontal"/>
+                                </ItemsPanelTemplate>
+                            </ListView.ItemsPanel>
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock
+                                        Style="{StaticResource DeviceTextBlockStyle}"
+                                        Text="{Binding FullName}"/>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </TabItem.Content>
+                </TabItem>
+            </TabControl>
+        </DockPanel>
+    </Border>
 </Window>
